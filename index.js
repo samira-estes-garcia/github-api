@@ -19,7 +19,7 @@ function displayResults(myJSON) {
     console.log(myJSON);
     $('.display-repos').html(`<h2>List of Repos</h2>`);
     for (let i = 0; i < myJSON.length; i++) {
-        $('.display-repos').append(`<p><a href="${myJSON[i].url}">${myJSON[i].name}</a></p>`);
+        $('.display-repos').append(`<p><a href="${myJSON[i].svn_url}">${myJSON[i].name}</a></p>`);
     }
 }
 
